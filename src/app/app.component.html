@@ -5,20 +5,11 @@
       {{ el }}
     </span>
   </div> -->
-
-<div class="grid">
-  <div class="row" *ngFor="let vector of combinedMatrix">
-    <div class="box" *ngFor="let el of vector">
-      
-      <div *ngIf="el == 'b'" class="inner" style="background: black;">{{el}}</div>
-      <div *ngIf="el == 'i'" class="inner" style="background: cyan;">{{el}}</div>
-      <div *ngIf="el == 'j'" class="inner" style="background: blue;">{{el}}</div>
-      <div *ngIf="el == 'l'" class="inner" style="background: orange;">{{el}}</div>
-      <div *ngIf="el == 's'" class="inner" style="background: purple;">{{el}}</div>
-      <div *ngIf="el == 'z'" class="inner" style="background: green;">{{el}}</div>
-      <div *ngIf="el == 'o'" class="inner" style="background: yellow;">{{el}}</div>
-      <div *ngIf="el == 't'" class="inner" style="background: tomato;">{{el}}</div>
-      <!-- <div *ngIf="el != 'b'" class="inner" style="background: red;">{{el}}</div> -->
-    </div>
+<div id="main" class="clear">
+  <div id="sidebar">
+    <menu-view></menu-view>
+  </div>
+  <div id="page-wrap">
+    <game-view></game-view>
   </div>
 </div>

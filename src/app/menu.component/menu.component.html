@@ -1,0 +1,52 @@
+<h1 style="text-align: center; font-family: 'Galindo'">Angular Tetris Clone</h1>
+
+<!-- {{gameState.currentTetro}}
+
+
+
+<div class="grid">
+    <div class="row" *ngIf="gameState.currentTetro == 'i'">
+        <div class="box">
+            <div class="inner"></div>
+        </div>
+        <div class="box">
+            <div class="inner"></div>
+        </div>
+        <div class="box">
+            <div class="inner"></div>
+        </div>
+        <div class="box">
+            <div class="inner"></div>
+        </div>
+        <div class="box">
+            <div class="inner"></div>
+        </div>
+    </div>
+</div> -->
+
+<br>
+
+<div style="width: 100%; text-align: center;">
+    <div class="btn-group-vertical" style="width: 80%; display: inline-block;">
+        <label (click)="resetGame();" class="btn btn-primary btn-lg" style="border: 3px solid #C8C0AC
+        ; margin-bottom: 6px; background: #E7DECE; color: black; font-family: 'Galindo'
+        " btn>New Game</label>
+        <label (click)="gameState.togglePause()" class="btn btn-primary btn-lg" style="border: 3px solid #C8C0AC
+        ; margin-bottom: 6px; background: #E7DECE; color: black; font-family: 'Galindo'
+        " btn>Pause</label>
+        <label class="btn btn-primary btn-lg" style="border: 3px solid #C8C0AC
+        ; margin-bottom: 6px; background: #E7DECE; color: black; font-family: 'Galindo'
+        " btn>Highscores</label>
+        <!-- <label class="btn btn-primary btn-lg" style="border: 3px solid #C8C0AC
+        ; margin-bottom: 6px; background: #E7DECE; color: black; font-family: 'Galindo'
+        " btn>About</label> -->
+    </div>
+</div>
+
+<br>
+
+<h2 style="text-align: center; font-family: 'Galindo'">Statistics:</h2>
+<h3 style="text-align: center; font-family: 'Galindo'">Time: {{gameState.time}}</h3>
+<!-- <h3 style="text-align: center; font-family: 'Galindo'">Level: {{gameState.level}}</h3> -->
+<h3 style="text-align: center; font-family: 'Galindo'">Score: {{gameState.score}}</h3>
+<h3 style="text-align: center; font-family: 'Galindo'">Lines: {{gameState.lines}}</h3>

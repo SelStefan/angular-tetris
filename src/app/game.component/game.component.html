@@ -1,0 +1,18 @@
+<!-- <h1>{{gameState.hasteOn.value}}</h1> -->
+<div class="grid">
+    <div class="row" *ngFor="let vector of combinedMatrix" style="position: float;">
+        <div class="box" *ngFor="let el of vector; let inx = index">
+
+            <div *ngIf="inx % 2 == 0" class="inner" style="background: #c8c0ac;"></div>
+            <div *ngIf="inx % 2 != 0" class="inner" style="background: #E7DECE;"></div>
+            <div *ngIf="el == 'i'" class="inner" style="background: #F90122;"></div>
+            <div *ngIf="el == 'j'" class="inner" style="background: #41A7FE;"></div>
+            <div *ngIf="el == 'l'" class="inner" style="background: #00AA8D;"></div>
+            <div *ngIf="el == 's'" class="inner" style="background: #48BA5E;"></div>
+            <div *ngIf="el == 'z'" class="inner" style="background: #FE670E;"></div>
+            <div *ngIf="el == 'o'" class="inner" style="background: #999796;"></div>
+            <div *ngIf="el == 't'" class="inner" style="background: #C656B6;"></div>
+            <!-- <div *ngIf="el != 'b'" class="inner" style="background: red;">{{el}}</div> -->
+        </div>
+    </div>
+</div>
